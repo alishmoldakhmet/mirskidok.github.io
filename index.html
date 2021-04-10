@@ -1,0 +1,609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
+        integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    
+    
+    <title>Мир скидок</title>
+</head>
+<body>
+  <div>
+    <header class="py-3 mb-3 border-bottom">
+      <div class="container-fluid d-grid gap-3 align-items-center" style="grid-template-columns: 1fr 2fr;">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand" href="index.html" id="main-logo"> <img width="100px" class='main-logo' src="img/logo.png"></a>
+          <div class='nachalo'>
+          <div class='little-inform'>
+              <span class="navbar-right">
+                  <div class="ret row">
+                      <!-- <li class="nav-item" id="city">
+                        
+                          <a class='first-words row' href="#">
+                              
+                                  
+                              &nbsp;
+                              <span class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                  Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                  <a class="dropdown-item" href="#">Action</a>
+                                  <a class="dropdown-item" href="#">Another action</a>
+                                  <div class="dropdown-divider"></div>
+                                  <a class="dropdown-item" href="#">Something else here</a>
+                                </div>
+                              </span>
+                              </a>
+                      </li> -->
+                      <div class="nav-item dropdown vv">
+                        <a class="ver nav-link dropdown-toggle rr" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          <svg class='zvonok mesto' width="20%" height="28" viewBox="0 0 37 49" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18.7568 48.7545C18.2238 48.7545 17.7282 48.503 17.4469 48.089L2.76154 26.478C0.954703 23.8132 0 20.7417 0 17.5943C0 8.27889 8.2991 0.700195 18.5 0.700195C28.7009 0.700195 37 8.27889 37 17.5943C37 20.6483 36.0977 23.6413 34.3906 26.2497L20.0795 48.07C19.8032 48.4913 19.3066 48.7506 18.7691 48.7544C18.765 48.7545 18.761 48.7545 18.7568 48.7545ZM18.5 3.51588C9.99925 3.51588 3.08333 9.83146 3.08333 17.5943C3.08333 20.2176 3.87822 22.7765 5.38227 24.9945L18.7336 44.6423L31.7447 24.8041C33.1653 22.6332 33.9167 20.1398 33.9167 17.5943C33.9167 9.83146 27.0007 3.51588 18.5 3.51588Z" fill="#FF0000"/>
+                            <path d="M18.5 26.0411C15.2731 26.0411 12.3288 24.5415 10.624 22.03C9.72483 20.7023 9.25 19.1687 9.25 17.594C9.25 12.9363 13.3995 9.14697 18.5 9.14697C23.6005 9.14697 27.75 12.9363 27.75 17.594C27.75 19.1224 27.3008 20.617 26.451 21.9166C24.7605 24.4994 21.7883 26.0411 18.5 26.0411ZM18.5 11.9627C15.0997 11.9627 12.3333 14.4889 12.3333 17.594C12.3333 18.6452 12.6488 19.6666 13.2455 20.5477C14.3832 22.224 16.3478 23.2254 18.5 23.2254C20.693 23.2254 22.6758 22.1963 23.8041 20.4725C24.3683 19.6097 24.6667 18.6142 24.6667 17.594C24.6667 14.4889 21.9003 11.9627 18.5 11.9627Z" fill="#FF0000"/>
+                            </svg><span id='gorod-name'>Атырау</span>
+                        </a>
+                        <div class="dropdown-menu teper" style='border:1px solid red;' aria-labelledby="navbarDropdown">
+                          <a class="dropdown-item" onclick='changetheGorod(1);'>Актау</a>
+                          <a class="dropdown-item" onclick='changetheGorod(2);'>Атырау</a>
+                          <a class="dropdown-item" onclick='changetheGorod(3);'>Жезказган</a>
+                          <a class="dropdown-item" onclick='changetheGorod(4);'>Караганда</a>
+                        </div>
+                      </div>
+                      <div class="nav-item" id="phone">
+                          <a class='ver first-words' href="#">
+                              <svg class='zvonok' width="20%" height="28" viewBox="0 0 40 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M31.6295 29.7915C30.8095 28.7904 29.8203 28.2552 28.7719 28.2552C27.732 28.2552 26.7343 28.7805 25.8804 29.7816L23.2088 32.9038C22.989 32.765 22.7692 32.6361 22.5578 32.5073C22.2534 32.3289 21.966 32.1604 21.7208 31.982C19.2182 30.1186 16.9439 27.6902 14.7627 24.5482C13.7058 22.9822 12.9957 21.6639 12.4799 20.3258C13.1732 19.5825 13.8158 18.8093 14.4414 18.066C14.6781 17.7884 14.9148 17.501 15.1516 17.2235C16.927 15.142 16.927 12.446 15.1516 10.3646L12.8435 7.6587C12.5814 7.35144 12.3108 7.03427 12.0572 6.71709C11.5499 6.10257 11.0173 5.46822 10.4677 4.87352C9.64764 3.922 8.66691 3.4165 7.63546 3.4165C6.604 3.4165 5.60636 3.922 4.7609 4.87352C4.75244 4.88343 4.75244 4.88343 4.74399 4.89334L1.86943 8.29305C0.787247 9.56175 0.170063 11.108 0.0347893 12.902C-0.168121 15.7962 0.558973 18.4922 1.11698 20.2564C2.48662 24.5879 4.53263 28.6021 7.58473 32.9038C11.2878 38.0876 15.7434 42.1811 20.8331 45.0654C22.7776 46.1458 25.3732 47.4244 28.2731 47.6424C28.4506 47.6523 28.6366 47.6622 28.8057 47.6622C30.7587 47.6622 32.3989 46.8396 33.684 45.2041C33.6925 45.1843 33.7094 45.1744 33.7178 45.1546C34.1575 44.5302 34.6647 43.9652 35.1974 43.3606C35.5609 42.9542 35.9329 42.528 36.2965 42.082C37.1335 41.0611 37.5731 39.8717 37.5731 38.6525C37.5731 37.4235 37.125 36.244 36.2711 35.2528L31.6295 29.7915ZM34.6563 40.2285C34.6478 40.2285 34.6478 40.2384 34.6563 40.2285C34.3266 40.6448 33.9884 41.0214 33.6248 41.4377C33.0753 42.0522 32.5173 42.6965 31.9931 43.42C31.1392 44.4905 30.1331 44.996 28.8142 44.996C28.6874 44.996 28.5521 44.996 28.4253 44.9861C25.9143 44.7978 23.5808 43.648 21.8307 42.6668C17.0454 39.951 12.8435 36.0953 9.35174 31.2089C6.46872 27.1352 4.54108 23.3687 3.26444 19.3248C2.47816 16.8567 2.19071 14.9339 2.31753 13.12C2.40207 11.9604 2.78253 10.9989 3.48426 10.1763L6.36727 6.79639C6.78154 6.34045 7.22118 6.09266 7.65236 6.09266C8.185 6.09266 8.61619 6.4693 8.88673 6.78648C8.89519 6.79639 8.90364 6.8063 8.9121 6.81621C9.42783 7.38118 9.91819 7.96597 10.4339 8.5904C10.696 8.90758 10.9666 9.22475 11.2371 9.55183L13.5452 12.2577C14.4414 13.3084 14.4414 14.2797 13.5452 15.3303C13.3 15.6178 13.0633 15.9052 12.8181 16.1827C12.1079 17.0352 11.4316 17.8281 10.696 18.6012C10.6791 18.621 10.6622 18.6309 10.6537 18.6508C9.92665 19.5032 10.0619 20.3357 10.2141 20.9007C10.2226 20.9304 10.231 20.9602 10.2395 20.9899C10.8397 22.6947 11.6852 24.3004 12.9703 26.2134L12.9787 26.2233C15.3122 29.5933 17.7725 32.2198 20.4864 34.2319C20.8331 34.4896 21.1881 34.6978 21.5263 34.896C21.8307 35.0744 22.1181 35.2429 22.3633 35.4213C22.3971 35.4411 22.431 35.4709 22.4648 35.4907C22.7522 35.6592 23.0228 35.7385 23.3018 35.7385C24.0035 35.7385 24.4432 35.2231 24.5869 35.0546L27.4783 31.6648C27.7658 31.3278 28.2224 30.9214 28.755 30.9214C29.2792 30.9214 29.7104 31.308 29.9725 31.645C29.9809 31.6549 29.9809 31.6549 29.9894 31.6648L34.6478 37.1261C35.5187 38.1371 35.5187 39.1778 34.6563 40.2285Z" fill="#FF0000"/>
+                              <path d="M21.6193 11.8712C23.8344 12.3073 25.8466 13.5364 27.453 15.4196C29.0594 17.3028 30.0993 19.6618 30.4798 22.2587C30.5728 22.9128 31.0547 23.3688 31.6042 23.3688C31.6719 23.3688 31.7311 23.3589 31.7987 23.349C32.4243 23.23 32.8386 22.5362 32.7372 21.8027C32.2806 18.6607 31.0124 15.7962 29.0763 13.5265C27.1402 11.2567 24.6968 9.76994 22.0167 9.23471C21.391 9.11577 20.8077 9.60144 20.6978 10.325C20.5878 11.0485 20.9937 11.7523 21.6193 11.8712Z" fill="#FF0000"/>
+                              <path d="M39.9826 21.4162C39.2301 16.2423 37.1503 11.5342 33.9545 7.78762C30.7587 4.04101 26.7428 1.60273 22.3295 0.720595C21.7123 0.591743 21.129 1.08733 21.0191 1.81088C20.9176 2.54434 21.3319 3.22825 21.9575 3.3571C25.8973 4.14013 29.4905 6.33061 32.3481 9.67084C35.2058 13.021 37.0658 17.2335 37.7337 21.8523C37.8267 22.5065 38.3086 22.9624 38.8581 22.9624C38.9258 22.9624 38.985 22.9525 39.0526 22.9426C39.6698 22.8336 40.0925 22.1397 39.9826 21.4162Z" fill="#FF0000"/>
+                              </svg>
+                              &nbsp;8 775 504 81 53</a>
+                            </div>
+                    </div>
+              </span>
+          </div>
+          <div class='d-flex'>
+              <div class="form-group fg--search search dvoinoy">
+                  <input type="text" class="input form-control dvoinoy isheyka" placeholder="Я ищу...">
+                  <button type="submit"><i class="fa fa-search"></i></button>
+              </div>            
+              <div class="text-end obshiy">
+                  <button type="button" class="btn btn-warning  dvoinoy naity" style='background-color: red;'>Найти</button>
+                  <div class="dropdown">
+                    <button class="dvoinoy naity2 dropbtn kn btn btn-default dropdown-toggle" style="background-color: white;margin:0px 5px;"  type="button" data-toggle="dropdown">
+                      <span class="navbar-toggler-icon"
+                          style="background-image: url(img/knopka.png); width: 35px;"></span>
+                    </button>
+                    <ul class="dropdown-menu spasitel2">
+                      <li><a tabindex="-1" routerLink='/'>Все</a></li>
+                      <li><a tabindex="-1" href="newbond.html">Новые</a></li>
+                      <li><a tabindex="-1" href="#">Развлечения</a></li>
+                      <li class="dropdown-submenu">
+                        <a class="test" tabindex="-1" href="#">Еда<span class="caret dropleft"></span></a>
+                        <ul class="dropdown-menu spasitel2">
+                          <li><a tabindex="-1" href="#">Доставка еды</a></li>
+                          <li><a tabindex="-1" href="#">Продукты</a></li>
+                          <li><a tabindex="-1" href="#">Питания</a></li>
+                          <li><a tabindex="-1" href="#">Доставка еды<br>
+                            из Ресторана</a></li>
+                        </ul>
+                      </li>
+                      <li><a tabindex="-1" href="#">Здоровье</a></li>
+                      <li><a tabindex="-1" href="#">Красота</a></li>
+                      <li><a tabindex="-1" href="#">Спорт</a></li>
+                      <li><a tabindex="-1" href="#">Магазины</a></li>
+                      <li><a tabindex="-1" href="#">Дети</a></li>
+                      <li><a tabindex="-1" href="#">Услуги</a></li>
+                      <li><a tabindex="-1" href="#">Курсы</a></li>
+                      <li><a tabindex="-1" href="#">Аптеки</a></li>
+                    </ul>
+                  </div>
+                   
+              </div>
+          </div>
+          </div> 
+        </div>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg rrr navbar-light">
+    <div  class="navbar-collapse collapse" id="navbarText">
+      <ul class="navbar-nav m-auto row">
+        <li class="nav-item" style='margin-left: 2%;'><a class="p-2 link-secondary" href='index.html'>Все</a></li>          
+        <li class="nav-item"><a class="p-2 link-secondary" href='newbond.html'>Новые</a></li>          
+        <li class="nav-item"><a class="p-2 link-secondary" href="#">Развлечения</a></li>         
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle spasitel link-secondary" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Еда
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Доставка еды</a>
+            <a class="dropdown-item" href="#">Продукты</a>
+            <a class="dropdown-item" href="#">Питания</a>
+            <a class="dropdown-item" href="#">Доставка еды<br>
+              из Ресторана</a>
+            <a class="dropdown-item" href="#">Торты</a>
+          </div>
+        </div>       
+        <li class="nav-item"><a class="p-2 link-secondary" href="#">Здоровье</a></li>          
+        <li class="nav-item"><a class="p-2 link-secondary" href="#">Красота</a></li>          
+        <li class="nav-item"><a class="p-2 link-secondary" href="#">Спорт</a></li>         
+        <li class="nav-item"><a class="p-2 link-secondary" href="#">Магазины</a></li>          
+        <li class="nav-item"><a class="p-2 link-secondary" href="#">Дети</a></li>          
+        <li class="nav-item"><a class="p-2 link-secondary" href="#">Услуги</a></li>          
+        <li class="nav-item"><a class="p-2 link-secondary" href="#">Курсы</a></li>          
+        <li class="nav-item"><a class="p-2 link-secondary" href="#">Аптеки</a></li>          
+      </ul>
+    </div>
+  </nav>
+  </div>
+    
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                  <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                  <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <section class="business">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="business-contant">
+                                <div class='row figniya'>
+                                   <h3 class="business-text-main-1">
+                                    10 000+<br>
+                                    пользователей
+                                   </h3>
+                                    <h3 class="business-text-main-1">
+                                        100+<br>
+                                        компаний
+                                    </h3>
+                                    <h3 class="business-text-main-1">
+                                        30<br>
+                                        дней на сайте
+                                    </h3>
+                                </div>
+                                <div class='row'>
+                                <h4 class="business-text-main-3">
+                                    На нашем информационном портале <br>
+                                    клиенты могут ознакомиться с<br> 
+                                    вашими услугами и товарами. На <br>
+                                    сайте, куда ежедневно заходит более <br>
+                                    10 000 пользователей, ваша реклама<br>
+                                    будет видна на протяжении <span class='krasniy'>30</span> дней.<br>
+                                    <br>
+                                    Загрузите предложение о своих<br> 
+                                    услугах и товаре на сайт и ваша<br>
+                                    реклaма будет размещена в <span class='krasniy'>Instagram</span><br>
+                                    и <span class='krasniy'>Facebook</span>.
+                                </h4>
+                                <div class="business-img2">
+                                    <img class='birdene2' src="img/birdene2.png" alt="">
+                                </div>
+                                </div>
+                            </div>
+                        </div><!--  -->
+                        <div class="col-md-5">
+                            <div class="business-img">
+                                <img class='birdene' src="img/birdene.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  </section>
+                  </div>
+                  <div class="carousel-item">
+                    <section class="business">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="business-contant">
+                                <div class='row figniya'>
+                                   <h3 class="business-text-main-1">
+                                    10 000+<br>
+                                    пользователей
+                                   </h3>
+                                    <h3 class="business-text-main-1">
+                                        100+<br>
+                                        компаний
+                                    </h3>
+                                    <h3 class="business-text-main-1">
+                                        30<br>
+                                        дней на сайте
+                                    </h3>
+                                </div>
+                                <div class='row'>
+                                    <h4 class="business-text-main-3">
+                                        На нашем информационном портале <br>
+                                        клиенты могут ознакомиться с<br> 
+                                        вашими услугами и товарами. На <br>
+                                        сайте, куда ежедневно заходит более <br>
+                                        10 000 пользователей, ваша реклама<br>
+                                        будет видна на протяжении <span class='krasniy'>30</span> дней.<br>
+                                        <br>
+                                        Загрузите предложение о своих<br> 
+                                        услугах и товаре на сайт и ваша<br>
+                                        реклaма будет размещена в <span class='krasniy'>Instagram</span><br>
+                                        и <span class='krasniy'>Facebook</span>.
+                                    </h4>
+                                    <div class="business-img2">
+                                        <img class='birdene2' src="img/birdene2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="business-img">
+                                <img class='birdene' src="img/birdene.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                  </section>
+                  <div class="carousel-item">
+                    <section class="business">
+                    <div class="container">
+                    <div class="row">
+                        <div class="col-md-7">
+                            <div class="business-contant">
+                                <div class='row figniya'>
+                                   <h3 class="business-text-main-1">
+                                    10 000+<br>
+                                    пользователей
+                                   </h3>
+                                    <h3 class="business-text-main-1">
+                                        100+<br>
+                                        компаний
+                                    </h3>
+                                    <h3 class="business-text-main-1">
+                                        30<br>
+                                        дней на сайте
+                                    </h3>
+                                </div>
+                                <div class='row'>
+                                    <h4 class="business-text-main-3">
+                                        На нашем информационном портале <br>
+                                        клиенты могут ознакомиться с<br> 
+                                        вашими услугами и товарами. На <br>
+                                        сайте, куда ежедневно заходит более <br>
+                                        10 000 пользователей, ваша реклама<br>
+                                        будет видна на протяжении <span class='krasniy'>30</span> дней.<br>
+                                        <br>
+                                        Загрузите предложение о своих<br> 
+                                        услугах и товаре на сайт и ваша<br>
+                                        реклaма будет размещена в <span class='krasniy'>Instagram</span><br>
+                                        и <span class='krasniy'>Facebook</span>.
+                                    </h4>
+                                    <div class="business-img2">
+                                        <img class='birdene2' src="img/birdene2.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5">
+                            <div class="business-img">
+                                <img class='birdene' src="img/birdene.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                </section>
+                </div> <!--  -->
+                <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="sr-only">Next</span>
+                </a>
+                <!--  -->
+    </div>
+    <div class='container-fluid akcia'><button class='akciak'>Добавить акцию</button></div>
+    <section class="team" id="team">
+      <div class="container-fluid">
+          <h1 class="text-center-team">НОВЫЕ АКЦИИ</h1>
+          <div class="product-blocks">
+            <div class="row web-vodoley">
+              <div class="col-md-4 col-sm-6 bloki">
+                <div class="col-md-3">
+                  <button class="procent">30%</button>
+                  <img class="img-product-lines-1" src="img/firstvoda.png">
+                  <div class="text-product-lines">
+                      <h3 class="team-text">Бар “Водолей”</h3>
+                      <h5 class="team-p">Все меню и бар за пол цены</h5>
+                      <a  href="vodoley.html"><button class="petsot">От 500 тг</button></a>
+                  </div>
+              </div>
+              </div>
+              <div class="col-md-4 col-sm-6 bloki">
+                <div class="col-md-3">
+                  <button class="procent">30%</button>
+                  <img class="img-product-lines-1" src="img/firstvoda.png">
+                  <div class="text-product-lines">
+                      <h3 class="team-text">Бар “Водолей”</h3>
+                      <h5 class="team-p">Все меню и бар за пол цены</h5>
+                      <a  href="vodoley.html"><button class="petsot">От 500 тг</button></a>
+                  </div>
+              </div>
+              </div>
+              <div class="col-md-4 col-sm-6 bloki"  href="vodoley.html">
+                <div class="col-md-3">
+                  <button class="procent">30%</button>
+                  <img class="img-product-lines-1" src="img/firstvoda.png">
+                  <div class="text-product-lines">
+                      <h3 class="team-text">Бар “Водолей”</h3>
+                      <h5 class="team-p">Все меню и бар за пол цены</h5>
+                      <a  href="vodoley.html"><button class="petsot">От 500 тг</button></a>
+                  </div>
+              </div>
+              </div>
+              <div class="col-md-4 col-sm-6 bloki"  href="vodoley.html">
+                <div class="col-md-3">
+                  <button class="procent">30%</button>
+                  <img class="img-product-lines-1" src="img/firstvoda.png">
+                  <div class="text-product-lines">
+                      <h3 class="team-text">Бар “Водолей”</h3>
+                      <h5 class="team-p">Все меню и бар за пол цены</h5>
+                      <a  href="vodoley.html"><button class="petsot">От 500 тг</button></a>
+                  </div>
+              </div>
+              </div>
+              <div class="col-md-4 col-sm-6 bloki"  href="vodoley.html">
+                <div class="col-md-3">
+                  <button class="procent">30%</button>
+                  <img class="img-product-lines-1" src="img/firstvoda.png">
+                  <div class="text-product-lines">
+                      <h3 class="team-text">Бар “Водолей”</h3>
+                      <h5 class="team-p">Все меню и бар за пол цены</h5>
+                      <a  href="vodoley.html"><button class="petsot">От 500 тг</button></a>
+                  </div>
+              </div>
+              </div>
+              <div class="col-md-4 col-sm-6 bloki"  href="vodoley.html">
+                <div class="col-md-3">
+                  <button class="procent">30%</button>
+                  <img class="img-product-lines-1" src="img/firstvoda.png">
+                  <div class="text-product-lines">
+                      <h3 class="team-text">Бар “Водолей”</h3>
+                      <h5 class="team-p">Все меню и бар за пол цены</h5>
+                      <a  href="vodoley.html"><button class="petsot">От 500 тг</button></a>
+                  </div>
+              </div>
+              </div>
+          </div>
+          <div class="row mob-vodoley">
+            <div class="col-md-4 col-sm-6 bloki"  href="vodoley.html">
+              <div class="col-md-3 pad1">
+                <button class="procent">30%</button>
+                <img class="img-product-lines-1" src="img/firstvoda.png">
+                <div class="text-product-lines">
+                    <h3 class="team-text">Бар “Водолей”</h3>
+                    <h5 class="team-p">Все меню и бар за пол цены</h5>
+                    <a  href="vodoley.html"><button class="petsot">От 500 тг</button></a>
+                </div>
+              </div>
+              <div class="col-md-3 vtoroy pad1">
+                <button class="procent">30%</button>
+                <img class="img-product-lines-1" src="img/firstvoda.png">
+                <div class="text-product-lines">
+                    <h3 class="team-text">Бар “Водолей”</h3>
+                    <h5 class="team-p">Все меню и бар за пол цены</h5>
+                    <a  href="vodoley.html"><button class="petsot">От 500 тг</button></a>
+                </div>
+            </div>
+            </div>
+            <div class="col-md-4 col-sm-6 bloki"  href="vodoley.html">
+              <div class="col-md-3 pad1">
+                <button class="procent">30%</button>
+                <img class="img-product-lines-1" src="img/firstvoda.png">
+                <div class="text-product-lines">
+                    <h3 class="team-text">Бар “Водолей”</h3>
+                    <h5 class="team-p">Все меню и бар за пол цены</h5>
+                    <a  href="vodoley.html"><button class="petsot">От 500 тг</button></a>
+                </div>
+              </div>
+              <div class="col-md-3 vtoroy pad1">
+                <button class="procent">30%</button>
+                <img class="img-product-lines-1" src="img/firstvoda.png">
+                <div class="text-product-lines">
+                    <h3 class="team-text">Бар “Водолей”</h3>
+                    <h5 class="team-p">Все меню и бар за пол цены</h5>
+                    <a  href="vodoley.html"><button class="petsot">От 500 тг</button></a>
+                </div>
+            </div>
+            </div>
+            <!--  -->
+        </div>
+          <div class='container-fluid eshe'><button class='dobavit'>Еще</button></div>
+          </div>
+      </div>
+    </section>
+    <section class='lambada'>
+        <div class='container'>
+          <h1 class="kuponator text-center-team" style='color:black;'><span class='krasniy'>Мы</span> маркетинговый купонатор!</h1>
+          <div class="row">
+            <div class="col-md-7 blockhchain">
+            <label class='dom-inform dom-inform1'>Первые в городе</label>
+            <label class='dom-inform dom-inform2'>Только индивидуальный подход</label>
+            <label class='dom-inform dom-inform3'>Опытная команда маркетологов</label>
+            <label class='dom-inform dom-inform4'>Экономьте вместе с нами</label>
+            </div>
+            <div class="col-md-5 suret">
+              <div class="dom-img">
+                <img class='dom2' src="img/dom.png" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class='total-form'>
+      <div class='container-fluid'>
+        <h1 class="text-center-team ee" style='color:black'>Заполните <span class='krasniy'>форму</span>,<br> <span class='malen'>чтобы связаться с нами</span></h1>
+          <form class="my-forma">
+            <input class='form-elements' type="text" id="fname" name="fname" required placeholder="Имя"><br><br>
+            <input class='form-elements' type="email" id="email" name="email" required placeholder="Электронная почта"><br><br>
+            <input class='form-elements' type="text" id="company" name="company" required placeholder="Название компании"><br><br>
+            <input class='form-elements' type="text" id="work" name="work" required placeholder="Деятельность компании"><br><br>
+            <input class='form-elements' type="text" id="desc" name="desc" required placeholder="Описание данного товара или услуги"><br><br>
+            <input class='form-elements' type="text" id="photo" name="photo" required placeholder="Добавьте фотографии (желательно хорошего качества)"><br><br>
+            <input class='form-elements' type="text" id="nomer" name="nomer" required placeholder="Номер сотового телефона"><br><br>
+            <input class='form-elements' type="text" id="nomer2" name="nomer2" placeholder="Номер рабочего телефона (не обязательно)"><br><br>
+            <div class="form-elements1"><input class='submit-button' type="submit" value="Отправить"></div>
+            
+          </form>
+      </div>
+    </section>
+    <div class="container-fluid">
+      <h1 class="text-center-team google-karta" style='color:black'>Наше <span class='krasniy'>местоположение!</span></h1>
+      <iframe class='frameframe' src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d606.7908407255258!2d76.92937357741496!3d43.23453072345661!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2skz!4v1617877140025!5m2!1sru!2skz" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>    
+    <footer class="mainfooter" role="contentinfo">
+        <div class="footer-middle">
+        <div class="container">
+          <div class="row web-footer">
+            <div class="col-md-3 col-sm-6">
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4>Компания</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#"></a></li>
+                  <li><a href="#">О нас</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4>Клиентам</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">Обратная связь</a></li>
+                  <li><a href="#">Вопросы и ответы</a></li>
+                  <li><a href="#">Публичная оферта</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4>Партнерам</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">Для вашего бизнеса</a></li>
+                  
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <!--Column1-->
+                <div class="footer-pad">
+                  <h4>Контакты</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Казахстан, Атырау,<br> БЦ “Бай Тал”</a></li>
+                    <li><a href="#" style='font-size:20px;font-weight:900;'>+ 775 504 81 53</a></li>
+                    <li>
+                      <a href="#"></a>
+                    </li>
+                  </ul>
+                  <ul class='row insta'>
+                    <li><a href="#" class="iconsOfMe" title="Facebook"><img class="iconsOfMe" src="img/facebook.png" alt="facebook"></a></li>
+                    <li><a href="#" class="iconsOfMe" title="Facebook"><img class="iconsOfMe" src="img/instagram.png" alt="instagram"></a></li>
+                    <li><a href="#" class="iconsOfMe" title="Facebook"><img class="iconsOfMe" src="img/whatsapp.png" alt="instagram"></a></li>
+                   </ul>	
+                </div>
+              </div>
+          </div>
+          <div class="row mob-footer">
+            <div class="col-md-3 col-sm-6" style='width:50%'>
+              <!--Column1-->
+
+              <div class="footer-pad">
+                <h4>Компания</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#"></a></li>
+                  <li><a href="#">О нас</a></li>
+                </ul>
+              </div>
+            
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4>Клиентам</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">Обратная связь</a></li>
+                  <li><a href="#">Вопросы и ответы</a></li>
+                  <li><a href="#">Публичная оферта</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-md-3 col-sm-6" style='width:50%'>
+              <!--Column1-->
+              <div class="footer-pad">
+                <h4>Партнерам</h4>
+                <ul class="list-unstyled">
+                  <li><a href="#">Для вашего бизнеса</a></li>
+                  
+                  <li>
+                    <a href="#"></a>
+                  </li>
+                </ul>
+              </div>
+                <!--Column1-->
+                <div class="footer-pad">
+                  <h4>Контакты</h4>
+                  <ul class="list-unstyled">
+                    <li><a href="#">Казахстан, Атырау,<br> БЦ “Бай Тал”</a></li>
+                    <li><a href="#" style='font-size:20px;font-weight:900;'>+ 775 504 81 53</a></li>
+                    <li>
+                      <a href="#"></a>
+                    </li>
+                  </ul>
+                  <ul class='row insta'>
+                    <li><a href="#" class="iconsOfMe" title="Facebook"><img class="iconsOfMe" src="img/facebook.png" alt="facebook"></a></li>
+                    <li><a href="#" class="iconsOfMe" title="Facebook"><img class="iconsOfMe" src="img/instagram.png" alt="instagram"></a></li>
+                    <li><a href="#" class="iconsOfMe" title="Facebook"><img class="iconsOfMe" src="img/whatsapp.png" alt="instagram"></a></li>
+                   </ul>	
+                </div>
+              </div>
+          </div>
+          
+      
+      
+        </div>
+        </div>
+      </footer>
+</body>
+<script src="script.js"></script>
+</html>
+
+
+
+
+
+
+
+
+
+
