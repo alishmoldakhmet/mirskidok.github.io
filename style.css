@@ -824,12 +824,12 @@ option:hover{
     border-radius: 10px;
     font-size: 25px;
     font-weight: 800;
-    margin: 160px 0px 0px 70px;
+    margin: 40px 0px 0px 70px;
     background-color: yellow;
 }
 .otzivi{
     width: 90%;
-    height: 300px;
+    height: 390px;
     background-color: rgb(255, 255, 255);
     margin: 0% 5%;
     overflow-y: scroll;
@@ -864,9 +864,7 @@ option:hover{
    overflow: hidden;
    
 }
-.bbr>li{
 
-}
 .rahat{
     display:block;
 }
@@ -1133,13 +1131,184 @@ option:hover{
     .fg--search button {
         padding: 5px 20px !important;
     }
+}
+.bbr{
+
+}
+@media (max-width:414px){
+    .petsot {
+        position: absolute;
+        background-color: rgb(70, 69, 70);
+        color: white;
+        border: 1px solid rgb(70, 69, 70);
+        border-radius: 20px;
+        width: 75px;
+        font-size: 9px;
+        height: 30px;
+        margin: 7px 0px 0px -40px;
+        font-weight: 700;
+    }
+    .product-blocks {
+        margin-left: 0%;}
+    .team-text{
+        font-size: 15px;
+        line-height: 22px;
+        display: flex;
+        align-items: center;
+        color: #920707;
+        margin-top: 6%;
+        margin-left: 10%;
+    }
+    .team-p{
+        font-size: 9px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        color: #000000;
+        opacity: 0.4;
+        margin-left: 7%;
+    }
+    .text-product-lines{
+        width: 150px;
+        height: 65px;
+        top: 130px;
+        border-radius: 0px 0px 0px 0px;
+        text-align: center;
+        border: 1px solid red;
+        color: #fff;
+    }
+    .img-product-lines-1{
+        border-radius: 16px 16px 0px 0px;
+        margin-top: 20%;
+        width: 150px;
+        
+    }
+    .bloki{
+        margin-bottom: 100px;
+        width:50%;
+    }
+    .ver {
+        width: 120px!important;
+    }
+    .ret{
+        
+        margin-left: 10%;
+    
+        }
+    .rating-area {
+        overflow: hidden;
+        margin: 0% 0% !important;
+        width: 75% !important;
+    }
+    .ves-bar {
+        margin: 5% 19% !important;
+    }
+    .bloki {
+
+        margin-bottom: 100px;
+        width: 50%;
+        margin-left: -7px !important;
+    }
+    .spasitel2{
+        width:122px;
+        min-width: 120px;
+        margin: 0px 0px 0px 7px;
+    }
+    .pad1{
+        padding-left: 5px !important;
+    }
+    .blockhchain{
+        margin: 20px 0px 0px -35px !important;
+        display: block;
+    }
+    .suret{
+        width: 102px !important;
+    }
+    .dom-inform{
+        padding: 0px 0px 0px 50px;
+        border-radius: 50px;
+        line-height: 4em;
+        font-size: 20px;
+        width: 465px;
+        background-color: red;
+        color: white;
+        text-align: start;
+    }
+    .dom-inform1{
+        width: 487px;
+        padding: 0px 0px 0px 50px;
+    }
+    .dom-inform2{
+        width: 604px;
+        padding: 0px 0px 0px 50px;
+    }
+    .dom-inform3{
+        width: 649px;
+        padding: 0px 0px 0px 50px;
+    }
+    .dom-inform4{
+        width: 695px;
+        padding: 0px 0px 0px 50px;
+    }
+    .dom-img{
+        width: 100px !important;
+        margin: 0% 15%;
+    }
+    .lambada{
+        margin: 70px 0px;
+    }
+    .dom2{
+        margin: 50px 0px 0px -1px !important;
+        width: 126px !important;
+    }
+    .akcia{
+        margin-top: 30px;
+        text-align: center;
+        
+    }
+    .akciak{
+        margin: 0% 44% 0% 41%;
+        border: 0px solid transparent;
+        text-align: center;
+        background-color: red;
+        color: white;
+        width: 15%;
+        line-height: 2em;
+        font-size: 20px;
+        border-radius: 20px 20px 20px 0px;
+    }
+    .business-img2{
+        width: 47%;
+        margin-left: -12px;
+    }
+    .birdene2 {
+        margin: 10px 0px 0px 14px;
+        width: 80% !important;
+    }
+    .business-text-main-1{
+        font-size: 14px;
+    }
+    .business-text-main-3{
+        font-size: 9px;
+    }
+    .dropdown-content{
+        margin: 683px 0px 0px -84px !important;
+    }
+    .submit-button{
+        width: 100px;
+        margin: 0% 30% !important;
+    }
+    .form-elements{
+        font-size: 10px !important;}
+    .kupili{
+        width: 28%;
+        font-size: 18px;
+        font-weight: 800;
+        margin: 0% 36%;
+    }
+
 } 
 @media (max-width:376px){
-    .otzivi {
-        width: 360px !important;
-        height: 300px;
-        margin: 0% 0%;
-    }
     .ret{
         
         margin-left: 10%;
@@ -1232,7 +1401,7 @@ option:hover{
     }
     .birdene2 {
         margin: 4px 0px 0px 14px;
-        width: 100%;
+        width: 50%;
     }
     .business-text-main-1{
         font-size: 14px;
@@ -1289,36 +1458,6 @@ option:hover{
         width: 40%;
         margin: 0px 0px 0px 0px;
     }
-    fieldset {
-        margin-bottom: 15px;
-        padding: 10px;
-        border: 1px solid #34495e;
-        border-radius: 5px;
-    }
-    
-input,
-select,
-output,
-textarea {
-    margin: 0 0 10px 0;
-    padding: 2px 5px;
-    width: 95%;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    vertical-align: middle;
-    font-family: "Roboto";
-}
-input[type="reset"] { 
-    display: inline-block;
-    margin: 0 5px;
-    padding: 6px 15px;
-    width: auto;
-    height: auto;
-    border: none;
-    border-radius: 5px;
-    background: #2c3e50;
-    color: #fff;
-}
     .mesto {
         margin-right: 8px !important;
     }
@@ -1449,12 +1588,12 @@ input[type="reset"] {
         font-size: 25px;
         color: white;
     }
-    .otzyv {
-        width: 35%;
+    .otzyv{
+        width: 36%;
         height: 36px;
         border: 1px solid yellow !important;
         border-radius: 15px;
-        font-size: 13px;
+        font-size: 15px;
         font-weight: 800;
         margin: 4% 32%;
         background-color: yellow;
