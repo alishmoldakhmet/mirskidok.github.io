@@ -1323,6 +1323,7 @@ option:hover{
         margin: 5% 19% !important;
     }
     .bloki {
+	background-color:purple;
         margin-bottom: 100px;
         width: 50%;
         margin-left: -7px !important;
